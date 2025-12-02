@@ -21,8 +21,6 @@ function init() {
     render();
 }
 
-
-
 function render() {
     let contentID = document.getElementById("renderContainerId");
     contentID.innerHTML = '';
