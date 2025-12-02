@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schutzanalyse
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="head-container">
+
+        <h2 class="headline">Erstellt von Istvan</h2>
+        <div class="flags">
+            <img class="flag-english" src="./img/Screenshot 2025-10-19 215135.png" alt="">
+            <a href="index.html">
+                <img class="flag-deutsch" src="./img/Screenshot 2025-10-24 153326.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="karten-container">
+        <div class="karten">
+            <p class="headline-karten">Informationssicherheit</p>
+            <button onclick="toggleDeckblatt()" class="button-class">Deckblatt</button>
+            <div class="deckblatt" id="id-deckblatt"></div>
+            <div class="vertical-linie-p-text">
+                <p class="text-vertical">Data protection legally protects personal data and regulates who may use which
+                    data
+                    for what purpose.
+                    Data security ensures that all data is technically protected – e.g., against theft, loss
+                    or manipulation.</p>
+                <div class="vertical-linie"></div>
+                <p class="p-text">Technical protection of IT systems
+                    It concerns all information
+                    on paper or in an employee's head.
+                    The goal is to guarantee the protection objectives (confidentiality, integrity, availability) for
+                    all information.
+                    Confidential documents are kept in a locked cabinet.
+                    Office spaces are only accessible with a chip card.
+                    IT systems are encrypted and secured.
+                    Technical and organizational protection of all information
+                </p>
+            </div>
+            <div class="horisontal-linie-p-text"></div>
+            <p class="text-horisontal">Data protection: legal protection of personal data, purpose limitation
+                Data security: technical protection of all data against loss, theft, and manipulation</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Data protection</p>
+            <button onclick="toggleDeckblatt(1)" class="button-class">Deckblatt</button>
+            <div class="deckblatt" id="id-deckblatt1"></div>
+            <div class="vertical-linie-p-text">
+                <p class="text-vertical">Data protection legally protects personal data and regulates who may use which
+                    data for what purpose.
+                    Data security ensures that all data is technically protected – e.g., against theft, loss
+                    or manipulation.</p>
+                <div class="vertical-linie"></div>
+                <p class="p-text">Data protection is different from data security.
+                    It only refers to personal data, i.e., information about people (e.g., name,
+                    address, email, IP address).
+                    Protecting people's privacy
+                    and ensuring that their data is processed only with consent and lawfully.
+                    This is regulated by law in the GDPR (General Data Protection Regulation).
+                    A company may only use personal data for the stated purpose (e.g., customer service, not
+                    advertising).
+                    Employees may not see all customer data if they do not need it for their work.
+                    Data protection = legal protection of personal data
+                    Data security = technical protection of all data
+                </p>
+            </div>
+            <div class="horisontal-linie-p-text"></div>
+            <p class="text-horisontal">Datenschutz: rechtlicher Schutz personenbezogener Daten, Zweckbindung
+                Datensicherheit: technischer Schutz aller Daten vor Verlust, Diebstahl, Manipulation</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Datensicherheit</p>
+            <p class="p-text"> Datensicherheit ist ein Teilbereich der IT-Sicherheit.
+                Sie bezieht sich speziell auf den Schutz der Daten selbst – egal, ob sie personenbezogen sind oder
+                nicht.
+                Daten sollen nicht verloren, beschädigt oder manipuliert werden.
+                Regelmäßige Backups erstellen.
+                Zugriffsrechte korrekt setzen.
+                Verschlüsselung beim Speichern und Übertragen von Daten.
+                Datensicherheit schützt alle Daten – also auch technische oder betriebliche Informationen, nicht nur
+                persönliche.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">IT-Sicherheit</p>
+            <p class="p-text">IT-Sicherheit bezieht sich auf den technischen Schutz von IT-Systemen – also von
+                Computern, Netzwerken
+                und Programmen – gegen:
+                Angriffe (z. B. Hacker, Malware),
+                Datenverlust,
+                unbefugten Zugriff.
+                Ziel ist es, die Schutzziele der IT-Sicherheit zu gewährleisten: Eine Firewall schützt ein
+                Unternehmensnetzwerk vor Angriffen aus dem Internet.
+                Ein Backup sorgt dafür, dass Daten nach einem Ausfall wiederhergestellt werden können.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Urheberecht</p>
+            <p class="p-text">
+                Das Urheberrecht schützt geistiges Eigentum – also alles, was jemand selbst erschaffen hat.
+                In der IT betrifft das z. B. Software, Code, Texte, Bilder, Musik, Webseiten usw.
+                Der Urheber (also der Schöpfer) hat das Recht zu entscheiden:
+                wer sein Werk nutzen, kopieren oder verändern darf,
+                und unter welchen Bedingungen (z. B. Lizenz, Bezahlung, Quellenangabe).
+                Wenn du ein Programm schreibst, bist du der Urheber.
+                Andere dürfen deinen Code nicht einfach kopieren oder verkaufen, ohne deine Erlaubnis.
+                Verstöße gegen das Urheberrecht sind Rechtsverletzungen und können zu Abmahnungen oder Geldstrafen
+                führen</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Cisco</p>
+            <p class="p-text">Cisco ist ein US-Unternehmen (gegründet 1984),
+                Weltmarktführer für Netzwerk- und IT-Sicherheitslösungen.
+                → Stellt Router, Switches, Firewalls, WLAN-Access-Points her.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Hauptaufgabe von Cisco</p>
+            <p class="p-text">Cisco verbindet Computer, Server und Netzwerke weltweit.
+                → Datenübertragung, Kommunikation, Netzwerksicherheit.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Wichtige Cisco-Geräte</p>
+            <p class="p-text">Router: verbindet Netzwerke
+                Switch: verbindet Geräte im LAN
+                Firewall: schützt vor Angriffen
+                Access Point: WLAN-Zugang</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Cisco-Software</p>
+            <p class="p-text">Cisco IOS: Betriebssystem für Router/Switches
+                Packet Tracer: Netzwerksimulation
+                AnyConnect: VPN-Software</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Cisco-Zertifizierungen</p>
+            <p class="p-text">CCNA: Grundwissen Netzwerke (Einsteiger)
+                CCNP: Fortgeschrittene Netzwerktechnik
+                CCIE: Expertenlevel</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Wichtige Fachbegriffe</p>
+            <p class="p-text">IP-Adresse: eindeutige Nummer im Netzwerk
+                VLAN: virtuelles Teilnetz
+                DHCP: automatische IP-Vergabe
+                DNS: wandelt Domainnamen in IP-Adressen um
+                MAC-Adresse: eindeutige Hardware-Adresse</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Cisco und Sicherheit</p>
+            <p class="p-text">Cisco schützt Netzwerke durch:
+                Firewalls
+                VPNs
+                Zugriffskontrolle
+                Intrusion-Detection-Systeme
+                Ziel: Vertraulichkeit, Integrität, Verfügbarkeit</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Beispiel</p>
+            <p class="p-text">Ein Unternehmen nutzt Cisco:
+                Router (Internetverbindung)
+                Switches (LAN)
+                Firewall (Schutz)
+                Access Points (WLAN)</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">CISO</p>
+            <p class="p-text">Chief Information Security Officer
+                👉 Bedeutet auf Deutsch: Leiter der Informationssicherheit
+                Der CISO ist die Führungsperson, die in einem Unternehmen
+                für alle Themen rund um Informations- und IT-Sicherheit verantwortlich ist.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Hauptaufgabe eines CISO</p>
+            <p class="p-text">Der CISO sorgt dafür, dass:
+                Daten und Systeme geschützt sind
+                Sicherheitsrichtlinien eingehalten werden
+                Angriffe verhindert und erkannt werden
+                Gesetze (z. B. DSGVO, IT-Sicherheitsgesetz) befolgt werden
+                ➡️ Ziel: Schutz von Informationen, IT-Systemen und Prozessen</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Typische Aufgaben eines CISO</p>
+            <p class="p-text">Entwickelt und überwacht die Sicherheitsstrategie
+                Erstellt Richtlinien & Notfallpläne
+                Überwacht Risiken und Sicherheitsvorfälle
+                Koordiniert mit IT-Abteilung und Management
+                Schulung der Mitarbeiter in IT-Sicherheit</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Wichtige Themen für einen CISO</p>
+            <p class="p-text">Informationssicherheit
+                Datenschutz (DSGVO)
+                Risikomanagement
+                Security by Design
+                Incident Response (Reaktion auf Sicherheitsvorfälle)
+                Awareness-Training (Sensibilisierung der Mitarbeiter)</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Was ist Zero Trust?</p>
+            <p class="p-text">Zero Trust = „niemals blind vertrauen“
+                ➡️ Ein IT-Sicherheitsmodell, bei dem kein Gerät und kein Benutzer automatisch als vertrauenswürdig gilt
+                – auch nicht innerhalb des eigenen Netzwerks.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Leitlinie zur Informationssicherheit</p>
+            <p class="p-text">Eine Leitlinie (Policy) beschreibt die grundsätzlichen Ziele und Regeln der
+                Informationssicherheit.
+                Sie wird von der Unternehmensleitung unterschrieben – sie zeigt:
+                „Das Management steht hinter der Sicherheit.“
+                Inhalt einer Leitlinie:
+                Ziel und Bedeutung der Informationssicherheit
+                Verantwortlichkeiten
+                Umgang mit Risiken
+                Verhalten der Mitarbeitenden
+                Verpflichtung zur Einhaltung von Gesetzen (z. B. DSGVO)
+                Einfach gesagt:
+                Die Leitlinie ist der „Sicherheits-Grundvertrag“ des Unternehmens.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Organisation des Sicherheitsprozesses</p>
+            <p class="p-text">Aufbau einer Sicherheitsorganisation, also wer für was verantwortlich ist.
+                Dazu gehört:
+                IT-Sicherheitsbeauftragter (ISB) ernennen
+                Rollen und Zuständigkeiten festlegen (Admin, Datenschutz, Management)
+                Kommunikationswege bestimmen
+                Mitarbeitende schulen und sensibilisieren
+                Einfach gesagt:
+                Man organisiert das „Sicherheitsteam“ und die Abläufe.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Initiierung des Sicherheitsprozesses</p>
+            <p class="p-text">Die Organisation entscheidet sich bewusst, Informationssicherheit systematisch aufzubauen.
+                Wichtige Schritte:
+                Geschäftsführung erkennt: „Informationssicherheit ist wichtig!“
+                Verantwortlichkeiten festlegen (z. B. IT-Sicherheitsbeauftragter, ISMS-Team)
+                Ziele und Rahmenbedingungen definieren
+                Budget und Ressourcen bereitstellen
+                🧠 Einfach gesagt:
+                Man startet den Sicherheitsprozess offiziell und legt fest, wer was macht.</p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">SAP</p>
+            <p class="p-text">. FI (Finance), CO (Controlling), MM (Material Management), SD (Sales and Distribution),
+                HCM (Human Capital Management) usw.
+                Technischer Bereich:
+                SAP-Architektur
+                SAP HANA (In-Memory-Datenbank)
+                ABAP-Programmierung (die Programmiersprache von SAP)
+                Anwendungsbereich:
+                Wie Benutzer mit SAP arbeiten
+                Wie Geschäftsprozesse in SAP abgebildet werden
+                Zukunftsthemen:
+                SAP S/4HANA
+                Cloud-Integration
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">TOM</p>
+            <p class="p-text">Technische und organisatorische Maßnahmen – Begriff aus der Datenschutz-Grundverordnung
+                (DSGVO).
+                → Das ist im Zusammenhang mit Datenschutz und IT-Sicherheit sehr wichtig.
+                Es beschreibt, wie Unternehmen personenbezogene Daten schützen (z. B. durch Zugriffsbeschränkungen,
+                Verschlüsselung, Backups usw.).
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Security by Design</p>
+            <p class="p-text">Grundprinzip in der IT- und Softwareentwicklung, das besagt:
+                Sicherheit soll von Anfang an in ein System eingebaut werden – und nicht erst nachträglich, wenn schon
+                etwas schiefgelaufen ist.
+                Das bedeutet:
+                Schon beim Planen, Programmieren und Testen einer Anwendung denkt man ständig darüber nach,
+                • wie man Angriffe verhindern,
+                • Daten schützen und
+                • Fehler vermeiden kann.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Security by Design</p>
+            <p class="p-text">1. Least Privilege Jeder Benutzer oder Prozess bekommt nur die Rechte, die er wirklich
+                braucht.
+                2. Defense in Depth Sicherheit auf mehreren Ebenen: z. B. Firewall + Zugriffskontrolle +
+                Verschlüsselung.
+                3. Secure Defaults Standard-Einstellungen sind sicher, nicht unsicher (z. B. Passwörter werden
+                erzwungen).
+                4. Fail Securely Wenn ein Systemfehler passiert, darf er nicht zu einer Sicherheitslücke führen.
+                5. Validate Input Alle Eingaben werden geprüft, um Angriffe wie SQL-Injection zu verhindern.
+                6. Encryption Everywhere Daten werden verschlüsselt – sowohl beim Speichern als auch beim Übertragen.
+                7. Logging & Monitoring Sicherheitsrelevante Ereignisse werden aufgezeichnet und überwacht.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Was ist ein Sicherheitsloch</p>
+            <p class="p-text">Ein Sicherheitsloch (engl. Security Hole oder Vulnerability) ist ein Fehler oder eine
+                Schwachstelle in einem Computerprogramm, Betriebssystem oder einer IT-Infrastruktur,
+                die es Angreifern ermöglicht, etwas zu tun, was eigentlich nicht erlaubt ist.
+                Beispiele:
+                • Zugriff auf vertrauliche Daten bekommen
+                • Schadcode einschleusen (z. B. Viren oder Trojaner)
+                • Kontrolle über einen Server übernehmen
+                • Passwörter stehlen
+                Kurz gesagt:
+                Eine Sicherheitslücke ist wie ein Fenster, das jemand versehentlich offen gelassen hat – und durch das
+                ein Angreifer hineinklettern kann.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Wie entstehen Sicherheitslücken?</p>
+            <p class="p-text">Sicherheitslücken entstehen meistens durch:
+                • menschliche Fehler (z. B. Programmierfehler, falsche Konfiguration)
+                • Zeitdruck bei der Entwicklung
+                • fehlende Sicherheitsprüfungen
+                • veraltete Software
+                • Unwissenheit oder Nachlässigkeit
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Informationssicherheit</p>
+            <p class="p-text">Informationssicherheit ist der übergeordnete Begriff über IT-Sicherheit und
+                Datensicherheit.
+                Sie betrifft alle Informationen – egal ob:
+                • digital (z. B. in einer Datenbank),
+                • auf Papier,
+                • oder im Kopf eines Mitarbeiters.
+                Ziel ist es, die Schutzziele (Vertraulichkeit, Integrität, Verfügbarkeit) für alle Informationen zu
+                gewährleisten.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">IT-Sicherheit</p>
+            <p class="p-text">IT-Sicherheit bezieht sich auf den technischen Schutz von IT-Systemen – also von
+                Computern, Netzwerken und Programmen – gegen:
+                • Angriffe (z. B. Hacker, Malware),
+                • Datenverlust,
+                • unbefugten Zugriff.
+                Ziel ist es, die Schutzziele der IT-Sicherheit zu gewährleisten:
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">ist Zero Trust</p>
+            <p class="p-text">Zero Trust = „niemals blind vertrauen“
+                ➡️ Ein IT-Sicherheitsmodell, bei dem kein Gerät und kein Benutzer automatisch als vertrauenswürdig gilt
+                – auch nicht innerhalb des eigenen Netzwerks. • Früher: Geräte im Firmennetzwerk galten als
+                vertrauenswürdig
+                • Heute: Cyberangriffe können auch von innen kommen
+                • Zero Trust = immer überprüfen, bevor Zugriff gewährt wird
+
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">– Typische Maßnahmen bei Zero Trust</p>
+            <p class="p-text">• Multi-Faktor-Authentifizierung (MFA)
+                • Strikte Zugriffskontrollen
+                • Verschlüsselung von Daten im Netzwerk
+                • Mikrosegmentierung von Netzwerken
+                • Permanente Überwachung und Analyse von Aktivitäten
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Best Practice</p>
+            <p class="p-text">Definition:
+                Eine Methode oder Vorgehensweise, die sich in der Praxis bewährt hat.
+                ➡️ Wird oft als empfohlener Standard genutzt, um effizient und sicher zu arbeiten.
+                Beispiel:
+                • Regelmäßige Backups als Best Practice für Datensicherung
+                • Zwei-Faktor-Authentifizierung als Best Practice für Benutzerkonten
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">– De-facto-Standard</p>
+            <p class="p-text">Definition:
+                Ein Verfahren, Format oder Produkt, das tatsächlich weit verbreitet ist, auch wenn es nicht offiziell
+                vorgeschrieben ist.
+                Beispiel:
+                • PDF als De-facto-Standard für Dokumente
+                • Windows als De-facto-Standard für PCs
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">ITIL</p>
+            <p class="p-text">Definition:
+                ITIL = Information Technology Infrastructure Library
+                ➡️ Sammlung von Best Practices für IT-Service-Management (ITSM)
+                Ziel:
+                • IT-Services effizient bereitstellen
+                • Qualität verbessern
+                • Risiken minimieren
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Rollen in IT & Sicherheit</p>
+            <p class="p-text">Definition:
+                Eine Rolle beschreibt Verantwortung und Aufgaben einer Person im IT- oder Sicherheitsbereich.
+                Beispiele:
+                • CISO: Verantwortlich für Informationssicherheit
+                • Systemadministrator: Verwaltung von Servern & Netzwerken
+                • Database Administrator (DBA): Verwaltung von Datenbanken
+                • Endbenutzer: Darf IT-Systeme nur nutzen, nicht konfigurieren
+                Grundsatz:
+                • Rollen helfen, Zugriffsrechte klar zu definieren (Least Privilege)
+                • Trennung von Aufgaben erhöht Sicherheit und Ordnung
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">– Was ist ein Ticketsystem?</p>
+            <p class="p-text">Ein Ticketsystem ist eine Software, mit der Anfragen, Probleme oder Aufgaben dokumentiert,
+                verwaltet und bearbeitet werden.
+                ➡️ Jeder Vorgang bekommt ein Ticket (eine Art Aktenzeichen).
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Zweck eines Ticketsystems</p>
+            <p class="p-text">• Strukturierte Bearbeitung von Problemen
+                • Nachverfolgbarkeit jeder Anfrage
+                • Kommunikation zwischen IT, Support und Benutzer
+                • Priorisierung und Monitoring von Aufgaben
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">– Was ist ITSM?</p>
+            <p class="p-text">IT Service Management
+                ➡️ ITSM beschreibt die Planung, Bereitstellung, Steuerung und Verbesserung von IT-Services in einem
+                Unternehmen.
+                • IT-Services effizient bereitstellen
+                • Qualität der IT-Services kontinuierlich verbessern
+                • Risiken in der IT minimieren
+                • Kundenorientierung fördern (interne oder externe Kunden)
+                • Prozessorientierung: Arbeit nach klaren Prozessen
+                • Service-Lifecycle: Planung → Bereitstellung → Betrieb → Verbesserung
+                • Messung & Reporting: Leistung überwachen, SLAs einhalten
+                • Kontinuierliche Verbesserung: Probleme analysieren und optimieren
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">ITIL</p>
+            <p class="p-text">• ITIL definiert Prozesse für:
+                o Incident Management
+                o Change Management
+                o Problem Management
+                o Service Level Management
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">ITSM-Tools</p>
+            <p class="p-text">• ServiceNow
+                • Jira Service Management
+                • BMC Remedy
+                • OTRS
+                Wer sind Leistungsorgane?
+                Leistungsorgane sind Personen, die im Namen einer Organisation oder juristischen Person handeln und
+                Entscheidungen treffen. Typische Beispiele:
+                • GmbH: Geschäftsführer
+                • AG: Vorstand
+                • Verein: Vorstand
+                • Körperschaften: Vorstände oder Geschäftsführer
+                Aufgabe: Sie vertreten die Organisation nach außen und treffen für sie Entscheidungen.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Haftungsarten</p>
+            <p class="p-text">Wenn ein Leistungsorgan handelt, kann es haftbar werden – also persönlich für Schäden oder
+                Verpflichtungen aufkommen müssen. Es gibt verschiedene Formen:
+                1. Innenhaftung – gegenüber der Organisation (z. B. GmbH, Verein)
+                o Tritt ein Schaden innerhalb der Organisation auf, haftet das Organ, wenn es Pflichten verletzt hat.
+                o Beispiel: Der Geschäftsführer einer GmbH kauft Waren, obwohl die Firma zahlungsunfähig ist und es
+                vorhersehbar war, dass der Kauf der GmbH schadet.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Außenhaftung </p>
+            <p class="p-text">o Das Organ haftet, wenn es fremde Rechte verletzt.
+                o Beispiel: Ein Vorstand unterschreibt einen Vertrag, obwohl er die Befugnis überschreitet, und der
+                Vertrag führt zu Schaden bei einem Geschäftspartner.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Einschränkungen / Schutz für Leistungsorgane</p>
+            <p class="p-text">• Entlastung durch Beschlüsse: Wenn die Organisation die Tätigkeit genehmigt oder der
+                Vorstand entlastet wird, kann Haftung reduziert werden.
+                • Versicherungsschutz: Viele Organisationen schließen D&O-Versicherungen (Directors & Officers) ab, um
+                Organe gegen finanzielle Folgen abzusichern.
+                • Gesetzliche Grenzen: Haftung kann z. B. bei Insolvenz oder strafbarem Verhalten nicht ausgeschlossen
+                werden.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Zweck des Grundschutzkompendiums</p>
+            <p class="p-text">Das Grundschutzkompendium dient dazu, Unternehmen, Behörden und Organisationen dabei zu
+                unterstützen, ihre IT-Systeme und Daten sicher zu machen. Es bietet:
+                • Standardisierte Sicherheitsmaßnahmen
+                • Praktische Empfehlungen
+                • Schutzmaßnahmen für unterschiedliche IT-Bereiche
+                Das Ziel ist, dass IT-Systeme grundlegend abgesichert sind, ohne dass man jedes Risiko individuell
+                analysieren muss.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> Aufbau</p>
+            <p class="p-text">Das Kompendium ist hierarchisch gegliedert:
+                1. Bausteine:
+                o Grundlegende Einheiten, z. B. „Server“, „Clients“, „Mobile Endgeräte“, „Netzwerke“
+                o Jeder Baustein enthält typische Risiken und maßgeschneiderte Sicherheitsmaßnahmen
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> Reaction – Reaktion</p>
+            <p class="p-text">Reaction bedeutet, auf erkannte Bedrohungen zu reagieren, um Schäden zu begrenzen oder zu
+                beheben. Alarmierung Admins oder Sicherheitsbeauftragte werden informiert
+                Blockierung Angreifender Zugriff wird gestoppt (z. B. Firewall sperrt IP)
+                Isolierung Infizierte Systeme vom Netzwerk trennen
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> ORP – Organisation</p>
+            <p class="p-text">• Bezieht sich auf organisatorische Maßnahmen innerhalb der Organisation.
+                • Beispiele: Richtlinien, Verantwortlichkeiten, Schulungen, Notfallpläne.
+                • Ziel: Prozesse und Zuständigkeiten so gestalten, dass IT-Sicherheit systematisch umgesetzt wird.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">CON – Concept / Konzeption</p>
+            <p class="p-text">• Bezieht sich auf Planung und Konzeption der IT-Sicherheit.
+                • Beispiele: Sicherheitskonzepte, Richtlinien für Zugriffsrechte, Schutzbedarfsermittlung.
+                • Ziel: Sicherheit von Anfang an in IT-Systeme und Prozesse einbauen.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">OPS – Operations / Betrieb</p>
+            <p class="p-text">• Alle Maßnahmen, die den täglichen Betrieb betreffen.
+                • Beispiele: Backup, Systemüberwachung, Patch-Management, Benutzerverwaltung.
+                • Ziel: IT-Systeme zuverlässig und sicher betreiben
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">APP – Applications / Anwendungen</p>
+            <p class="p-text">• Bezieht sich auf Anwendungssoftware, die genutzt wird.
+                • Beispiele: ERP-Systeme, Office-Software, Webanwendungen.
+                • Maßnahmen: Zugriffsschutz, Verschlüsselung, Eingabevalidierung.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> SYS – Systems / Systeme</p>
+            <p class="p-text">• Bezieht sich auf Anwendungssoftware, die genutzt wird.
+                • Beispiele: ERP-Systeme, Office-Software, Webanwendungen.
+                • Maßnahmen: Zugriffsschutz, Verschlüsselung, Eingabevalidierung.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> IND – Industrial / Industrielle Systeme</p>
+            <p class="p-text">• Bezieht sich auf Industrielle Steuerungs- und Automatisierungssysteme (ICS, SCADA).
+                • Beispiele: Fabrikautomation, Produktionsanlagen.
+                • Ziel: Schutz von Produktionsprozessen und kritischen Infrastrukturen.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">NET – Networks / Netzwerke</p>
+            <p class="p-text">• Bezieht sich auf Netzwerkinfrastruktur.
+                • Beispiele: LAN, WAN, WLAN, VPN, Router, Firewalls.
+                • Maßnahmen: Segmentierung, Firewalls, Intrusion Detection, sichere Protokolle.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">INF – Infrastructure / Infrastruktur</p>
+            <p class="p-text">• Bezieht sich auf physische und technische Infrastruktur, die IT-Systeme unterstützt.
+                • Beispiele: Rechenzentren, Stromversorgung, Kühlung, Gebäudezugang.
+                • Maßnahmen: Zutrittskontrollen, Notstromversorgung, Brandschutz.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> Kernbestandteile eines ISMS</p>
+            <p class="p-text">1. Risikomanagement
+                o Risiken erkennen, analysieren, bewerten und Maßnahmen ableiten
+                2. Richtlinien & Prozesse
+                o Sicherheitsrichtlinien, Notfallpläne, Benutzerrollen
+                3. Kontrollen & Maßnahmen
+                o Technische Maßnahmen (Firewalls, Verschlüsselung)
+                o Organisatorische Maßnahmen (Schulungen, Zugriffsrechte)
+                4. Überwachung & Audit
+                o Regelmäßige Kontrollen und Verbesserungen
+                5. Kontinuierlicher Verbesserungsprozess (PDCA-Zyklus)
+                o Plan → Do → Check → Act
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> ISMS und IT-Grundschutz</p>
+            <p class="p-text">• Das BSI-Grundschutzkompendium liefert konkrete Bausteine und Maßnahmen, die in ein ISMS
+                integriert werden können.
+                • ISMS = Rahmenwerk, Grundschutz = konkrete Maßnahmen
+                • Zusammen ermöglichen sie eine zertifizierbare Informationssicherheit.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">der PDCA-Zyklus</p>
+            <p class="p-text">PDCA steht für:
+                • P – Plan (Planen)
+                • D – Do (Umsetzen)
+                • C – Check (Überprüfen)
+                • A – Act (Handeln / Anpassen)
+                Definition:
+                Der PDCA-Zyklus ist ein kontinuierlicher Verbesserungsprozess, der dafür sorgt, dass Maßnahmen
+                systematisch geplant, umgesetzt, kontrolliert und verbessert werden.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> Die vier Phasen im Detail</p>
+            <p class="p-text">1. Plan (Planen)
+                o Ziele und Maßnahmen definieren
+                o Risiken identifizieren
+                o Prozesse planen
+                o Beispiele: Sicherheitsrichtlinien aufstellen, Schutzbedarf analysieren
+                2. Do (Umsetzen)
+                o Geplante Maßnahmen in der Praxis durchführen
+                o Ressourcen einsetzen, Systeme konfigurieren
+                o Beispiele: Firewalls installieren, Zugriffsrechte vergeben, Schulungen durchführen
+                3. Check (Überprüfen)
+                o Ergebnisse kontrollieren und messen
+                o Wirksamkeit der Maßnahmen prüfen
+                o Beispiele: Audits, Monitoring, Testläufe, Schwachstellenanalyse
+                4. Act (Handeln / Anpassen)
+                o Maßnahmen verbessern oder anpassen, wenn nötig
+                o Korrekturmaßnahmen implementieren
+                o Beispiele: Prozesse optimieren, zusätzliche Kontrollen einführen, Sicherheitsrichtlinien aktualisieren
+                ________________________________________
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Anwendung im ISMS</p>
+            <p class="p-text">• Der PDCA-Zyklus sorgt dafür, dass ein ISMS nicht statisch bleibt, sondern kontinuierlich
+                verbessert wird.
+                • Jede Runde des Zyklus erhöht die Informationssicherheit und reduziert Risiken.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Die drei Grundschutzziele der IT-Sicherheit</p>
+            <p class="p-text">1. C – Confidentiality (Vertraulichkeit)
+                o Daten dürfen nur von berechtigten Personen gelesen werden.
+                o Beispiel: Nur autorisierte Mitarbeiter dürfen Kundendaten sehen.
+                2. I – Integrity (Integrität / Unverfälschtheit)
+                o Daten dürfen nicht unbefugt verändert oder gelöscht werden.
+                o Beispiel: Finanzdaten in der Buchhaltung müssen korrekt bleiben.
+                3. A – Availability (Verfügbarkeit)
+                o Daten und Systeme müssen verfügbar sein, wenn sie gebraucht werden.
+                o Beispiel: Online-Shop muss rund um die Uhr erreichbar sein, Backups müssen abrufbar sein.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Wichtige Sicherheitsmaßnahmen</p>
+            <p class="p-text">1. Netzwerksicherheit aktivieren
+                o TLS/SSL für Druckaufträge
+                o VPN für entfernte Nutzer
+                2. Speicherverschlüsselung
+                o Interne Festplatten verschlüsseln
+                o Temporäre Dateien regelmäßig löschen
+                3. Benutzerkontrolle
+                o Authentifizierung per PIN, Smartcard oder Badge
+                4. Protokollierung & Monitoring
+                o Wer hat was gedruckt, gescannt oder kopiert?
+                5. Firmware-Updates
+                o Sicherheitslücken schließen
+                Drucker und Multifunktionsgeräte sind kleine Computer – sie speichern und verarbeiten sensible Daten.
+                Verschlüsselung bei Übertragung und Speicherung schützt diese Informationen vor unbefugtem Zugriff.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Bereiche der Basis-Anforderungen</p>
+            <p class="p-text">1. Organisatorische Maßnahmen (ORP)
+                o Zuständigkeiten für IT-Sicherheit festlegen
+                o Sicherheitsrichtlinien erstellen
+                o Schulung und Sensibilisierung der Mitarbeiter
+                2. Konzeptionelle Maßnahmen (CON)
+                o Sicherheitskonzept erstellen
+                o Schutzbedarf von Daten und Systemen bestimmen
+                o Notfall- und Wiederherstellungspläne
+                3. Betrieb / Operations (OPS)
+                o Backup & Restore
+                o Updates und Patch-Management
+                o Benutzerkonten und Zugriffsrechte korrekt verwalten
+                4. Systeme (SYS) & Anwendungen (APP)
+                o System-Hardening
+                o Sicherheitssoftware wie Antivirus
+                o Verschlüsselung von Daten bei Speicherung und Übertragung
+                5. Netzwerk (NET)
+                o Firewalls und Segmentierung
+                o Verschlüsselte Kommunikation
+                o Monitoring & Logging
+                6. Infrastruktur (INF)
+                o Zutrittskontrolle zu Serverräumen
+                o Notstromversorgung, Brandschutz
+                o Klimatisierung und physischer Schutz der Geräte
+                7. Industrielle Systeme (IND)
+                o Basis-Schutz für Produktionsanlagen und SCADA/ICS
+                o Zugangsbeschränkung und Überwachung
+                Basis-Anforderungen = Minimalmaßnahmen für IT-Sicherheit
+                Sie sorgen dafür, dass Vertraulichkeit, Integrität und Verfügbarkeit (CIA) der Informationen gesichert
+                sind, bevor komplexere Maßnahmen umgesetzt werden.
+
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">das Auskunftsrecht</p>
+            <p class="p-text">Definition:
+                Das Auskunftsrecht ist das Recht einer Person, Informationen über sie selbst von einer Organisation oder
+                Behörde zu erhalten.
+                • Es ist ein zentrales Recht im Datenschutz.
+                • Grundlage in Deutschland ist z. B. die DSGVO (Datenschutz-Grundverordnung).
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Fristen und Form</p>
+            <p class="p-text">• Die Organisation muss in der Regel innerhalb von 1 Monat antworten (DSGVO Art. 15).
+                • Die Auskunft kann schriftlich oder elektronisch erteilt werden.
+                • In Ausnahmefällen kann die Auskunft verweigert oder eingeschränkt werden (z. B. bei Sicherheits- oder
+                Geheimhaltungsgründen).
+                ________________________________________
+                5️⃣ Merksatz
+                Auskunftsrecht = Recht auf Information über die eigenen Daten.
+                Es schafft Transparenz, Kontrolle und Sicherheit für die betroffene Person.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Bedeutung im Datenschutz / IT-Kontext</p>
+            <p class="p-text">• Rechtsgrundlage für Datenverarbeitung:
+                Wenn Daten zur Erfüllung einer Aufgabe im öffentlichen Interesse verarbeitet werden, ist dies oft eine
+                rechtliche Grundlage nach DSGVO Art. 6 Abs. 1 lit. e.
+                • Beispiel: Eine Behörde verarbeitet personenbezogene Daten, um Steuern zu erheben oder
+                Sicherheitskontrollen durchzuführen.
+                Merke:
+                „Öffentliches Interesse“ rechtfertigt unter bestimmten Bedingungen die Verarbeitung personenbezogener
+                Daten, auch ohne ausdrückliche Einwilligung der betroffenen Person.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> Abgrenzung</p>
+            <p class="p-text">• Nicht öffentliches Interesse: Private Zwecke oder kommerzielle Zwecke.
+                • Öffentliches Interesse: Gesetzliche Aufgaben, Schutz der Allgemeinheit, Sicherheitsaufgaben,
+                Verwaltungspflichten.
+                Merksatz:
+                Die Wahrnehmung einer Aufgabe im öffentlichen Interesse bedeutet, dass Handlungen rechtmäßig erfolgen,
+                weil sie der Allgemeinheit dienen oder gesetzlich vorgeschrieben sind, z. B. in Verwaltung, Sicherheit
+                oder Gesundheit
+                Wer ist die „betroffene Person“?
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"> Welche Rechte hat eine betroffene Person?</p>
+            <p class="p-text">Die DSGVO gibt betroffenen Personen starke Rechte, damit sie Kontrolle über ihre eigenen
+                Daten behalten.
+                Hier sind die wichtigsten:
+                Recht Bedeutung / Erklärung
+                1. Auskunftsrecht (Art. 15 DSGVO) Die Person darf erfahren, welche Daten über sie gespeichert werden,
+                woher sie stammen, zu welchem Zweck sie verarbeitet werden und an wen sie weitergegeben wurden.
+                2. Recht auf Berichtigung (Art. 16) Falsche oder unvollständige Daten dürfen korrigiert oder ergänzt
+                werden.
+                3. Recht auf Löschung („Recht auf Vergessenwerden“, Art. 17) Personen können verlangen, dass ihre Daten
+                gelöscht werden, wenn sie z. B. nicht mehr benötigt werden oder unrechtmäßig verarbeitet wurden.
+                4. Recht auf Einschränkung der Verarbeitung (Art. 18) In bestimmten Fällen dürfen Daten vorübergehend
+                nicht weiterverarbeitet werden (z. B. während einer Prüfung).
+                5. Recht auf Datenübertragbarkeit (Art. 20) Personen dürfen ihre Daten in einem maschinenlesbaren Format
+                erhalten, um sie an einen anderen Anbieter zu übertragen (z. B. beim Wechsel eines Dienstes).
+                6. Widerspruchsrecht (Art. 21) Personen können der Verarbeitung widersprechen, wenn z. B. Daten für
+                Werbung oder Profiling genutzt werden.
+                7. Recht auf Beschwerde (Art. 77) Wenn jemand glaubt, dass seine Daten unrechtmäßig verarbeitet werden,
+                kann er sich bei der Datenschutzaufsichtsbehörde beschweren.
+                8. Recht auf Unterrichtung bei Datenpannen (Art. 34) Wenn persönliche Daten z. B. durch einen
+                Hackerangriff offengelegt wurden, muss die betroffene Person informiert werden.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten">Pflichten der Organisation</p>
+            <p class="p-text">Organisationen, Behörden oder Unternehmen müssen:
+                • diese Rechte leicht zugänglich machen (z. B. über Datenschutzerklärung),
+                • schnell reagieren (innerhalb von 1 Monat),
+                • und die Auskunft kostenlos bereitstellen (außer bei offensichtlichem Missbrauch).
+                ________________________________________
+                4️⃣ Merksatz
+                Die betroffene Person steht im Mittelpunkt des Datenschutzes.
+                Sie hat das Recht zu wissen, wer was über sie weiß, warum, wie lange und mit wem es geteilt wird – und
+                sie darf verlangen, dass das geändert oder gelöscht wird.
+            </p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+        <div class="karten">
+            <p class="headline-karten"></p>
+            <p class="p-text"></p>
+        </div>
+    </div>
+</body>
+
+</html>
