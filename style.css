@@ -1,6 +1,8 @@
 body {
     background-color: beige;
     margin: 0;
+    font-family: cursive;
+    font-size: 14px;
 }
 
 .head-container {
@@ -148,12 +150,16 @@ body {
 }
 
 .kartenClass {
+    position: relative;
+    /* sehr wichtig für das Deckblatt */
     width: 450px;
-    height: 308px;
+    height: 400px;
     background-color: rgb(245, 232, 190);
     margin: 8px;
     border: 1px solid rgb(192, 190, 190);
     border-radius: 4px;
+    overflow: hidden;
+    /* verhindert, dass Deckblatt rausläuft */
 }
 
 .titleClass {
@@ -172,9 +178,12 @@ body {
 }
 
 .ptexClass {
+    position: relative;
+    width: 400px;
+    height: 280px;
     margin-left: 8px;
     margin-right: 8px;
-    width: 470px;
+    overflow: hidden;
 }
 
 .textsContainer {
@@ -185,10 +194,12 @@ body {
     position: absolute;
     z-index: 2;
     background-color: rgb(187, 184, 184);
-    width: 308px;
-    height: 183px;
+    width: 280px;
+    height: 275px;
     transition: opacity 0.7s ease;
     opacity: 1;
+    margin-left: 8px;
+    border-radius: 4px;
 }
 
 .deckblatClass.hide {
@@ -196,6 +207,42 @@ body {
     /* langsam ausblenden */
     pointer-events: none;
     /* keine Klicks mehr */
+}
+
+.deckblattSmaller {
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(187, 184, 184);
+    width: 141px;
+    height: 274px;
+    margin-left: 300px;
+    transition: opacity 0.7s ease;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.deckblattSmaller.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.deckblattSmallest {
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(187, 184, 184);
+    width: 434px;
+    height: 76px;
+    margin-top: 284px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: opacity 0.7s ease;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.deckblattSmallest.hide {
+    opacity: 0;
+    pointer-events: none
 }
 
 .textMinimalBelow {
@@ -226,8 +273,19 @@ body {
     align-items: center;
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 .backClass {
+    font-size: 14px;
     cursor: pointer;
+    padding: 8px;
+    text-decoration: underline 2px;
 }
 
 .backClass:hover {
@@ -235,19 +293,27 @@ body {
     border-radius: 4px
 }
 
-.openClass {
+.backClass2 {
     cursor: pointer;
+    padding: 8px;
+    text-decoration: underline 2px;
 }
 
-.openClass:hover {
+.backClass2:hover {
     background-color: aliceblue;
-    border-radius: 4px;
 }
 
-.content {
+.backClass3 {
+    cursor: pointer;
+    padding: 8px;
+    text-decoration: underline 2px;
+}
+
+.backClass3:hover {
+    background-color: aliceblue;
+}
+
+.buttons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
     align-items: center;
 }
