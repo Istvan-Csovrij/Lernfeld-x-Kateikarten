@@ -64,7 +64,106 @@ const kartenDaten = [
         textVertical: "MES fungiert als Bindeglied zwischen Unternehmensplanung (ERP) und physischer Produktion (CPS), um Datenfluss und Steuerung vertikal zu integrieren.",
         textHorizontal: "Kernaufgaben: Auftragsmanagement, Qualitätsdatenerfassung und Prozessüberwachung – MES orchestriert die Zusammenarbeit verschiedener CPS.",
         ptext: "Das Manufacturing Execution System (MES) dient als zentrale Informationsdrehscheibe für Cyber-Physical Systems. Es übersetzt abstrakte Planungsdaten in konkrete Arbeitsanweisungen für die CPS und verarbeitet deren Rückmeldungen in Echtzeit. Durch diese Symbiose ermöglicht das MES eine dynamische Produktionssteuerung, lückenlose Rückverfolgbarkeit (Traceability) und verhindert, dass CPS als isolierte Inseln agieren, indem es sie in den Gesamtprozess einbindet."
+    },
+    {
+        title: "CPS-Pyramide: Einfluss auf ERP",
+        textVertical: "Die CPS-Pyramide zeigt die Verbindung von ERP, MES und physischen Systemen. ERP liefert Planungsdaten, MES steuert die CPS und sorgt für Rückmeldung.",
+        textHorizontal: "CPS-Pyramide: ERP → MES → CPS, Datenfluss vertikal, Rückmeldungen für Planung und Steuerung.",
+        ptext: "Die CPS-Pyramide beschreibt die vertikale Integration von Unternehmensplanung (ERP), Fertigungssteuerung (MES) und realen Produktionssystemen (CPS). ERP stellt die strategischen Planungsdaten bereit, MES übersetzt sie in konkrete Arbeitsaufträge und CPS führen die Aktionen physisch aus. Rückmeldungen der CPS fließen zurück, sodass ERP die Planung dynamisch anpassen kann. So werden isolierte Systeme vermieden und der gesamte Produktionsprozess effizient gesteuert."
+    },
+    {
+        title: "ERP-Ebene",
+        textVertical: "Die ERP-Ebene steuert strategisch Aufträge, Material und Kapazitäten und sorgt für die übergeordnete Koordination aller Geschäftsprozesse. Sie liefert zudem die Vorgaben für die Produktionssteuerung.",
+        textHorizontal: "ERP: Planung, Ressourcenmanagement, Auftragssteuerung, liefert Vorgaben an MES und sichert die Produktionskontinuität.",
+        ptext: "ERP bildet die oberste Ebene der CPS-Pyramide. Sie plant Aufträge, steuert Material und Kapazitäten und liefert Vorgaben an MES und CPS. Ergebnisse der Produktion fließen zurück, sodass Planung und Ressourcen effizient angepasst werden können. ERP sorgt so für eine stabile und koordinierte Fertigung, in der alle Ebenen optimal zusammenarbeiten. Zusätzlich ermöglicht ERP die Analyse von Produktionskennzahlen und unterstützt Managemententscheidungen durch transparente Informationen."
+    },
+
+    {
+        title: "MES / SCADA-Ebene",
+        textVertical: "MES übersetzt ERP-Planung in konkrete Produktionsaufträge, SCADA überwacht Prozesse und sorgt für Echtzeit-Transparenz. Diese Ebene ist zentral für die Produktionskontrolle.",
+        textHorizontal: "MES/SCADA: Auftragsausführung, Prozesskontrolle, Qualitätsüberwachung.",
+        ptext: "Die MES/SCADA-Ebene verbindet die strategische Planung des ERP mit der praktischen Umsetzung in der Produktion. MES verteilt konkrete Arbeitsaufträge an Maschinen und Produktionslinien, während SCADA den Zustand der Anlagen überwacht, Prozesse dokumentiert und Qualitätsdaten sammelt. Diese Ebene sorgt für Echtzeit-Transparenz und ermöglicht schnelle Reaktionen auf Störungen, wodurch die Produktion effizient und zuverlässig gesteuert wird."
+    },
+
+    {
+        title: "Steuerungsebene",
+        textVertical: "Steuerungssysteme setzen MES-Aufträge direkt in Maschinenaktionen um und überwachen deren korrekte Ausführung. Sie bilden die Schnittstelle zwischen MES und Feldebene.",
+        textHorizontal: "Steuerung: SPS, Controller, Roboter steuern Produktion und liefern Status.",
+        ptext: "Die Steuerungsebene wandelt MES-Aufträge in konkrete Maschinenbefehle um. SPSen, industrielle Controller und Roboter übernehmen die direkte Steuerung von Produktionsanlagen, überwachen den Betriebszustand und melden Statusinformationen zurück. Durch diese Ebene wird gewährleistet, dass die Produktion präzise, sicher und effizient abläuft und dass Daten für MES und ERP bereitgestellt werden."
+    },
+
+    {
+        title: "Feldebene",
+        textVertical: "Sensoren und Aktoren erfassen und steuern die physische Produktion, liefern Daten in Echtzeit nach oben. Sie sind die Basis aller Automatisierungsprozesse.",
+        textHorizontal: "Feldebene: Sensoren messen, Aktoren handeln, Daten gehen nach oben.",
+        ptext: "Die Feldebene stellt die physische Basis der CPS-Pyramide dar. Sensoren erfassen Parameter wie Temperatur, Druck, Position oder Geschwindigkeit, während Aktoren mechanische oder elektrische Aktionen ausführen. Diese Elemente sind direkt mit der realen Welt verbunden und liefern kontinuierlich Daten, die an die Steuerungsebene und MES zurückfließen, um den Produktionsprozess dynamisch zu steuern und zu optimieren."
+    },
+
+    {
+        title: "Horizontale Integration",
+        textVertical: "Verknüpft Maschinen und Prozesse auf derselben Produktionsebene und ermöglicht reibungslosen Datenaustausch. Sie sorgt für abgestimmte Abläufe innerhalb der Fertigung.",
+        textHorizontal: "Horizontal: Austausch von Daten und Synchronisation zwischen Anlagen.",
+        ptext: "Horizontale Integration stellt sicher, dass Maschinen, Anlagen und Prozesse innerhalb derselben Produktionsebene miteinander vernetzt sind. Daten werden in Echtzeit ausgetauscht, Abläufe synchronisiert und Engpässe vermieden. Dadurch können Ressourcen effizient genutzt, Produktionslinien flexibel angepasst und Qualität sowie Durchlaufzeiten verbessert werden."
+    },
+
+    {
+        title: "Vertikale Integration",
+        textVertical: "Verbindet alle Ebenen von Feldebene bis ERP für reibungslosen Datenfluss und Informationsaustausch. Sie ermöglicht Echtzeitsteuerung über die gesamte Produktionskette.",
+        textHorizontal: "Vertikal: Daten von CPS nach ERP, Planungen von ERP nach unten.",
+        ptext: "Vertikale Integration verbindet alle Ebenen der Produktionspyramide, von der Feldebene über Steuerung und MES bis hin zum ERP. Produktionsdaten werden kontinuierlich nach oben gemeldet, während Planungen und Vorgaben von ERP nach unten übertragen werden. Dadurch entsteht ein geschlossener Informationskreislauf, der Echtzeitsteuerung, Rückverfolgbarkeit und eine optimierte Produktion ermöglicht."
+    },
+
+    {
+        title: "IPC",
+        textVertical: "Industrial PCs steuern Maschinen und verarbeiten Produktionsdaten zuverlässig, sie vernetzen die Steuerungsebene mit MES und SCADA.",
+        textHorizontal: "IPC: Robuste Computer für Maschinensteuerung, Datenerfassung und Prozessüberwachung.",
+        ptext: "Industrial PCs (IPC) sind speziell für industrielle Umgebungen konzipiert. Sie übernehmen die Steuerung von Maschinen, erfassen Produktionsdaten, überwachen Prozesse und kommunizieren mit MES und SCADA. Aufgrund ihrer Robustheit gegenüber Staub, Vibrationen und Temperatur gewährleisten sie einen sicheren und stabilen Betrieb, was die Zuverlässigkeit und Effizienz von CPS wesentlich erhöht."
+    },
+
+    {
+        title: "Sensoren und Aktoren",
+        textVertical: "Sensoren erfassen Daten, Aktoren setzen Befehle um und bilden die direkte Schnittstelle zur physischen Produktion.",
+        textHorizontal: "Sensoren messen Prozesswerte, Aktoren steuern Maschinen oder Anlagen.",
+        ptext: "Sensoren und Aktoren sind die direkt sichtbare Schnittstelle der CPS zur realen Welt. Sensoren erfassen physikalische Größen wie Temperatur, Druck, Feuchtigkeit, Geschwindigkeit oder Position. Aktoren setzen Steuerbefehle in mechanische oder elektrische Aktionen um. Zusammen bilden sie die Grundlage für die Datenerfassung und -ausführung und liefern essentielle Informationen für die höheren Ebenen der Pyramide, um Prozesse zu überwachen und zu optimieren."
+    },
+
+    {
+        title: "Einfluss auf CPS",
+        textVertical: "ERP, MES, IPC, Sensoren und Aktoren beeinflussen direkt die Steuerung und Effizienz von CPS und sichern die Echtzeitfähigkeit.",
+        textHorizontal: "Einfluss: Systeme und Geräte liefern Daten, steuern Abläufe, sichern Echtzeitfähigkeit und Qualität.",
+        ptext: "Die gesamte CPS-Pyramide ist auf das Zusammenspiel von ERP, MES, IPC, Sensoren und Aktoren angewiesen. ERP plant Ressourcen und Aufträge, MES übersetzt diese in konkrete Produktionsbefehle, IPC steuert Maschinen, Sensoren liefern Echtzeitinformationen und Aktoren setzen die Befehle um. Nur durch dieses Zusammenspiel wird die Effizienz, Flexibilität, Qualität und Sicherheit von Cyber-Physical Systems sichergestellt."
+    },
+    {
+        title: "API",
+        textVertical: "APIs ermöglichen die Kommunikation zwischen Software-Systemen.",
+        textHorizontal: "API: definiert Schnittstellen, Austausch von Daten und Funktionen zwischen Programmen.",
+        ptext: "Eine API (Application Programming Interface) ist eine definierte Schnittstelle, über die Software-Systeme miteinander kommunizieren können. Sie legt fest, wie Daten abgerufen oder Befehle gesendet werden, ohne dass die internen Abläufe bekannt sein müssen. APIs sind essenziell für die Integration von IoT-Geräten, MES, ERP oder Cloud-Diensten, da sie automatisierten, standardisierten und sicheren Datenaustausch ermöglichen. So können Systeme effizient zusammenarbeiten und Informationen in Echtzeit weitergeben."
+    },
+    {
+        title: "Edge Computing",
+        textVertical: "Edge Computing verarbeitet Daten nahe am Entstehungsort, statt in der Cloud.",
+        textHorizontal: "Edge: lokale Datenverarbeitung an Geräten oder Gateways, reduziert Latenz und Netzwerkbelastung.",
+        ptext: "Edge Computing verschiebt die Datenverarbeitung von zentralen Rechenzentren direkt an den Ort, an dem die Daten entstehen, z. B. an Sensoren, Aktoren oder Gateways. Dies reduziert Latenz, entlastet Netzwerke und ermöglicht Echtzeitreaktionen für IoT- oder CPS-Anwendungen. Durch die lokale Verarbeitung können Entscheidungen schneller getroffen, Sicherheitsrisiken verringert und die Effizienz von Produktions- oder Smart-Home-Systemen erheblich gesteigert werden."
+    },
+    {
+        title: "FOK / FOAK",
+        textVertical: "FOK bezeichnet innovative, einmalige Systeme oder Lösungen als Prototyp.",
+        textHorizontal: "FOK: First-of-a-Kind-Systeme, neuartige Prototypen, testen Konzepte und Technologien.",
+        ptext: "FOK (First-of-a-Kind) beschreibt einmalige, innovative Systeme oder Anlagen, die als Prototyp entwickelt werden, um neue Technologien, Konzepte oder Produktionsprozesse zu erproben. Diese Systeme dienen dazu, Erfahrungen zu sammeln, Risiken zu identifizieren und Verbesserungen vor der Serienproduktion umzusetzen. In CPS- oder IoT-Umgebungen ermöglicht FOK das Testen von Schnittstellen, Echtzeitdatenverarbeitung und neuen Automatisierungskonzepten unter realen Bedingungen."
+    },
+    {
+        title: "Rebound-Effekt",
+        textVertical: "Mehr Effizienz kann paradoxerweise zu höherem Verbrauch führen.",
+        textHorizontal: "Rebound: Einsparungen durch Effizienz werden durch verändertes Nutzerverhalten teilweise aufgehoben.",
+        ptext: "Der Rebound-Effekt beschreibt das Phänomen, dass Effizienzsteigerungen in Technologie oder Prozessen nicht immer zu einer Reduktion des Gesamtverbrauchs führen. Wenn Geräte sparsamer werden oder Prozesse optimiert werden, kann dies dazu führen, dass Nutzer ihr Verhalten anpassen und insgesamt mehr Ressourcen verbrauchen. In IoT- oder CPS-Umgebungen muss der Rebound-Effekt berücksichtigt werden, um Effizienzgewinne realistisch zu planen und die tatsächliche Wirkung von Optimierungen zu bewerten."
+    },
+    {
+        title: "Sigfox",
+        textVertical: "Sigfox ist ein energieeffizientes Funknetz für IoT-Geräte mit großer Reichweite.",
+        textHorizontal: "Sigfox: Low-Power-Wide-Area-Network, lange Reichweite, energiesparend, für kleine Datenmengen.",
+        ptext: "Sigfox ist ein LPWAN (Low-Power-Wide-Area-Network), das speziell für IoT-Anwendungen entwickelt wurde. Es ermöglicht Geräten, kleine Datenmengen über große Entfernungen von mehreren Kilometern zu übertragen, während der Energieverbrauch minimal bleibt. Wichtige Eigenschaften sind geringe Kosten, einfache Implementierung, weltweite Abdeckung und lange Batterielaufzeiten der Sensoren."
     }
+
 ];
 
 quadraten = [];

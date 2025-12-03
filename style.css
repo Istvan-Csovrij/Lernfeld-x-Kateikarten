@@ -183,7 +183,16 @@ body {
     height: 280px;
     margin-left: 8px;
     margin-right: 8px;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.scrollable {
+  word-wrap: break-word;   /* Lange Wörter umbrechen */
+  box-sizing: border-box;  /* Padding und Border berücksichtigen */
 }
 
 .textsContainer {
