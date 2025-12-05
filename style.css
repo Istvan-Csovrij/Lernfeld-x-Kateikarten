@@ -190,8 +190,10 @@ body {
 }
 
 .scrollable {
-  word-wrap: break-word;   /* Lange Wörter umbrechen */
-  box-sizing: border-box;  /* Padding und Border berücksichtigen */
+    word-wrap: break-word;
+    /* Lange Wörter umbrechen */
+    box-sizing: border-box;
+    /* Padding und Border berücksichtigen */
 }
 
 .textsContainer {
@@ -284,6 +286,7 @@ body {
 .content {
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -326,8 +329,59 @@ body {
     align-items: center;
 }
 
-.seidMenu{
-    background-color: yellow;
-    width: 100px;
-    height: 100%;
+.seidMenu {
+    width: 300px;
+    height: auto;
+    background-color: rgb(233, 233, 196);
+    margin-right: 10px;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    /* bleibt beim Scrollen oben kleben */
+    height: fit-content;
+    /* passt Höhe an den Inhalt an */
+}
+
+.layoutClass {
+    display: flex; 
+}
+
+.changeClass {
+    width: 100%;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+.changeÜberschrift {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(245, 232, 190);
+    font-weight: 600;
+}
+
+.inputClass {
+    width: 100vw;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-width: 0;
+    padding: 0;
+}
+
+.inputContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.changeLinealvertikal {
+    width: 1px;
+    height: 200px;
+    background-color: gray;
+    margin-left: 200px;
+}
+
+.changeLinealHorizontal {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
 }

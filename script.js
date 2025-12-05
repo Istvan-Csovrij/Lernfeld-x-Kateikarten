@@ -1218,6 +1218,7 @@ const kartenDaten = [
 quadraten = [];
 
 function init() {
+    menuTemplate();
     render();
 }
 
@@ -1251,7 +1252,6 @@ function render() {
             <div class="linealHorizontal"></div>
             <div class="textMinimalBelow">${karte.textHorizontal}</div>
           </div>
-          <div class = seidMenu"" > </div>
         `;
     });
 }
@@ -1271,3 +1271,17 @@ function toggledeckblatt3(index) {
     deckblatt3.classList.toggle("hide")
 }
 
+function menuTemplate() {
+    const seidMenuIdInhalt = document.getElementById("seidMenuId");
+    seidMenuIdInhalt.innerHTML = '';
+    seidMenuIdInhalt.innerHTML += `  <div class = "inputContainer">
+                                      <input id="inputId" class="inputClass" type="text" placeholder="Gib bitte Thema ein was du suchst">
+                                     </div>
+                                   <div class="changeClass"> 
+                                   <div class="changeÜberschrift">Thema </div> 
+                                   <div class="changeLinealvertikal"></div>
+
+                                   <div class="changeLinealHorizontal"></div
+                        </div>             
+    `;
+}
