@@ -174,7 +174,6 @@ body {
     margin-left: 8px;
     margin-right: 8px;
     width: 200px;
-
 }
 
 .ptexClass {
@@ -325,4 +324,10 @@ body {
 .buttons {
     display: flex;
     align-items: center;
+}
+
+.seidMenu{
+    background-color: yellow;
+    width: 100px;
+    height: 100%;
 }
